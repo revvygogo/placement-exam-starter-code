@@ -37,10 +37,7 @@ document.getElementById('minus-gb').addEventListener('click', function(){
     let total = parseInt(totalVotesCell.textContent);
 
     // if gb is zero or less, stop decrementing. Otherwise, decrement
-    if (gb <= 0){
-        gb = 0;
-        console.log('gb stopped at', gb);
-    } else {
+    if (gb > 0){
         gb = gb - 1;
         gingerVotesCell.textContent = gb;
 
@@ -72,10 +69,7 @@ document.getElementById('minus-cc').addEventListener('click', function(){
     let total = parseInt(totalVotesCell.textContent);
 
     // if cc is zero or less, stop decrementing. Otherwise, decrement
-    if (cc <= 0){
-        cc = 0;
-        console.log('cc stopped at', cc);
-    } else {
+    if (cc > 0){
         cc = cc - 1;
         chocolateVotesCell.textContent = cc;
 
@@ -108,10 +102,7 @@ document.getElementById('minus-sugar').addEventListener('click', function(){
     let total = parseInt(totalVotesCell.textContent);
 
     // if sugar is zero or less, stop decrementing. Otherwise, decrement
-    if (sugar <= 0){
-        sugar = 0;
-        console.log('sugar stopped at', sugar);
-    } else {
+    if (sugar > 0){
         sugar = sugar - 1;
         sugarVotesCell.textContent = sugar;
 
